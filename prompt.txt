@@ -1,0 +1,118 @@
+```json
+{
+  "user_story": "As a user, I want to be able to sort the search results by date so that I can easily find the most recent results.",
+  "corrected_user_story": "As a user, I want to sort search results by date to find the most recent results first.", 
+  "analysis": {
+    "Well-formed": {
+      "HasRole": true,
+      "HasMeans": true
+    },
+    "Atomic": {
+      "SingleFeature": true,
+      "NoAndOr": true
+    },
+    "Minimal": {
+      "NoImplementation": true,
+      "NoTestingHints": true
+    },
+    "Conceptually Sound": {
+      "MeansDefined": true,
+      "EndJustified": true,
+      "NoDependency": true 
+    },
+    "Problem-oriented": {
+      "FocusesOnProblem": true
+    },
+    "Unambiguous": {
+      "ClearTerms": true,
+      "NoVagueTerms": true
+    },
+    "Full Sentence": {
+      "CompleteSentence": true
+    },
+    "Estimatable": {
+      "ScopeDefined": true
+    },
+    "Unique": { 
+      "IsUnique": true // Placeholder, requires comparison with other stories
+    },
+    "Uniform": { 
+      "ConformsToTemplate": true // Placeholder, requires a defined template
+    },
+    "Independent": { 
+      "NoDependencies": true // Placeholder, requires analysis of dependencies on other stories
+    },
+    "Complete": { 
+      "ContributesToCompleteness": true // Placeholder, requires analysis of the entire set of user stories
+    },
+    "Conflict-free": { 
+      "NoConflicts": true // Placeholder, requires comparison with other stories
+    }
+  }
+}
+```
+
+**Prompt:**
+
+**Given a user story, analyze it based on the following criteria and generate a JSON output with the structure provided:**
+
+**Criteria:**
+
+* **Well-formed:**
+    * **HasRole:** Does the story start with "As a [Role]"? (True/False)
+    * **HasMeans:** Does the story contain a verb describing the desired action? (True/False)
+
+* **Atomic:**
+    * **SingleFeature:** Does the story focus on a single, clearly defined feature? (True/False)
+    * **NoAndOr:** Does the story avoid using "and" or "or" to combine multiple features? (True/False)
+
+* **Minimal:**
+    * **NoImplementation:** Does the story avoid mentioning implementation details? (True/False)
+    * **NoTestingHints:** Does the story avoid including testing instructions? (True/False)
+
+* **Conceptually Sound:**
+    * **MeansDefined:** Is the means clearly described? (True/False)
+    * **EndJustified:** Does the end provide a valid and meaningful reason? (True/False)
+    * **NoDependency:** Does the end avoid solely describing a dependency on another feature? (True/False)
+
+* **Problem-oriented:**
+    * **FocusesOnProblem:** Does the story describe the user's need or problem, not the solution? (True/False)
+
+* **Unambiguous:**
+    * **ClearTerms:** Are the terms and phrases used clear and unambiguous? (True/False)
+    * **NoVagueTerms:** Does the story avoid vague terms like "quickly," "easily," or "efficiently"? (True/False)
+
+* **Full Sentence:**
+    * **CompleteSentence:** Is the story a grammatically correct and complete sentence? (True/False)
+
+* **Estimatable:**
+    * **ScopeDefined:** Does the story have a well-defined scope and is not overly broad? (True/False)
+
+* **Unique:** 
+    * **IsUnique:** (True/False) - Placeholder, requires comparison with other stories in the set to determine uniqueness.
+
+* **Uniform:** 
+    * **ConformsToTemplate:** (True/False) - Placeholder, requires a defined template for comparison.
+
+* **Independent:** 
+    * **NoDependencies:** (True/False) - Placeholder, requires analysis of dependencies on other stories.
+
+* **Complete:** 
+    * **ContributesToCompleteness:** (True/False) - Placeholder, requires analysis of the entire set of user stories to determine completeness.
+
+* **Conflict-free:** 
+    * **NoConflicts:** (True/False) - Placeholder, requires comparison with other stories to identify potential conflicts.
+
+**Example User Story:**
+
+"As a user, I want to be able to sort the search results by date so that I can easily find the most recent results."
+
+**Expected Output:**
+
+The JSON output should follow the provided structure, including:
+
+* **"user_story"**: The original user story.
+* **"corrected_user_story"**: A potential improved version of the user story (e.g., "As a user, I want to sort search results by date to find the most recent results first.").
+* **"analysis"**: An object containing the results of the analysis for each criterion, with True/False values for each sub-criterion.
+
+This prompt now includes the "corrected_user_story" field, allowing for the inclusion of potential improvements to the original user story within the JSON output.
